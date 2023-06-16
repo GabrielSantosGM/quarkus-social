@@ -1,0 +1,15 @@
+package io.github.akinicchi.quarkus_social.rest.dto.output;
+
+import lombok.Data;
+
+@Data
+public class FieldError {
+
+    private String field;
+    private String message;
+
+    public FieldError(String field, String message) {
+        this.field = field;
+        this.message = message;
+    }
+}
